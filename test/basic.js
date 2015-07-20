@@ -5,6 +5,7 @@ test('basic usage', function (t) {
   var currentUser = process.getuid()
   t.doesNotThrow(function () {
     downgrade('nobody')
+    downgrade()
   })
   t.ok(process.getuid() !== currentUser)
   t.end()
