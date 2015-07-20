@@ -1,0 +1,53 @@
+{
+  "name": "downgrade",
+  "description": "Sets the user identity of the process to `www-data`",
+  "version": "0.0.0",
+  "author": {
+    "name": "Feross Aboukhadijeh",
+    "email": "feross@feross.org",
+    "url": "http://feross.org/"
+  },
+  "bugs": {
+    "url": "https://github.com/feross/downgrade/issues"
+  },
+  "dependencies": {
+    "debug": "^2.2.0"
+  },
+  "devDependencies": {
+    "standard": "^4.5.4",
+    "tape": "^4.0.1"
+  },
+  "homepage": "https://github.com/feross/downgrade",
+  "keywords": [
+    "downgrade",
+    "lower permission",
+    "setuid",
+    "setgid",
+    "process.setuid",
+    "process.setgid",
+    "downgrade user",
+    "server",
+    "www-data",
+    "user identity",
+    "posix",
+    "set user identity",
+    "set server user",
+    "set user",
+    "change user",
+    "change uid",
+    "change gid",
+    "uid",
+    "gid",
+    "user id",
+    "group id"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/feross/downgrade.git"
+  },
+  "scripts": {
+    "test": "standard && sudo tape test/*.js"
+  }
+}
