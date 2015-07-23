@@ -14,9 +14,16 @@ module.exports = function downgrade (uid, gid) {
   } catch (err) {
     var currentUid = (process.getuid && process.getuid()) || 'none'
     var currentGid = (process.getgid && process.getgid()) || 'none'
-    debug(
-      'Failed to downgrade: uid=%s (desired=%s); gid=%s (desired=%s)',
-      currentUid, uid, currentGid, gid
-    )
+    if (process.env.NODE_ENV === 'production') {
+      throw new Error(
+        'Failed to downgrade: uid=' + currentUid + ' (desired=' + uid + '); ' +
+        'gid=' + currentGid + ' (desired=' + gid + ')'
+      )
+    } else {
+      debug(
+        'Failed to downgrade: uid=%s (desired=%s); gid=%s (desired=%s)',
+        currentUid, uid, currentGid, gid
+      )
+    }
   }
 }
