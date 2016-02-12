@@ -1,10 +1,10 @@
 # downgrade [![travis][travis-image]][travis-url] [![npm][npm-image]][npm-url] [![downloads][downloads-image]][downloads-url]
 
-[travis-image]: https://img.shields.io/travis/feross/downgrade.svg?style=flat
+[travis-image]: https://img.shields.io/travis/feross/downgrade/master.svg
 [travis-url]: https://travis-ci.org/feross/downgrade
-[npm-image]: https://img.shields.io/npm/v/downgrade.svg?style=flat
+[npm-image]: https://img.shields.io/npm/v/downgrade.svg
 [npm-url]: https://npmjs.org/package/downgrade
-[downloads-image]: https://img.shields.io/npm/dm/downgrade.svg?style=flat
+[downloads-image]: https://img.shields.io/npm/dm/downgrade.svg
 [downloads-url]: https://npmjs.org/package/downgrade
 
 ### Sets the user identity of the process to `www-data`
