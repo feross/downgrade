@@ -1,3 +1,4 @@
+/*! downgrade. MIT License. Feross Aboukhadijeh <https://feross.org/opensource> */
 var debug = require('debug')('downgrade')
 
 module.exports = function downgrade (uid, gid) {
